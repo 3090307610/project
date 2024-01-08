@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+</head>
+<body>
+    <header>
+        <h1>用户管理</h1>
+        <nav>
+            <ul>
+                <li><a href="/用户管理">个人信息</a></li>
+                <li><a href="/用户预订">我的预订</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>个人信息</h2>
+            <form action="/用户信息更新" method="post">
+                <input type="text" name="username" placeholder="用户名"></br>
+                <input type="email" name="email" placeholder="邮箱"></br>
+                <input type="password" name="password" placeholder="密码"></br>
+                <button type="submit">保存更改</button>
+            </form>
+        </section>
+        <section>
+            <h2>我的预订</h2>
+            <table>
+                <tr>
+                    <th>预订编号</th>
+              

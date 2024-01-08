@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商家管理</title>
+</head>
+<body>
+    <header>
+        <h1>商家管理</h1>
+        <nav>
+            <ul>
+                <li><a href="/商家管理">商家列表</a></li>
+                <li><a href="/商家入驻">入驻申请</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>商家列表</h2>
+            <table>
+                <tr>
+                    <th>商家名称</th>
+                    <th>具体地址</th>
+                    <th>联系方式</th>
+                    <th>操作</th>
+                </tr>
+                <!-- 商家数据将通过后端动态插入 -->
+            </table>
+        </section>
+        <section>
+            <h2>商家入驻申请</h2>
+            <form action="/商家入驻申请" method="post">
+                <input type="text" name="business_name" placeholder="输入商家名称"><br/>
+                <input type="text" name="address" placeholder="输入地址"><br/>
+                <input type="text" name="contact" placeholder="输入联系方式"><br/>
+                <button type="submit">提交申请</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>峰之家</p>
+    </footer>
